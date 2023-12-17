@@ -79,6 +79,17 @@ img {
 .nav-adress:is(:hover, :focus) {
   color: #404bbf;
 }
+.nav-adress.active::after {
+  content: "";
+  display: block;
+  width: 100%;
+  height: 4px;
+  border-radius: 2px;
+  background: #404bbf;
+}
+.nav-adress.active {
+  color: #404bbf;
+}
 /* address */
 .address {
   font-style: normal;
